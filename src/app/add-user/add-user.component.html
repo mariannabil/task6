@@ -1,0 +1,44 @@
+<section class="container border bg-light text-dark mt-5 p-3">
+    <h2>Add New User</h2>
+    <form #myForm="ngForm" (ngSubmit)="AddMyUser(myForm.value)">
+      
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your Title"
+            name="Title" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your username"
+            name="name" ngModel>
+
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your lastname"
+            name="name" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your age"
+            name="age" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your password"
+            name="password" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your Email"
+            name="Email" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <input class="form-control p-2" placeholder="enter your phone"
+            name="phone" ngModel>
+            
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Add User</button>
+        </div>
+    </form>
+</section>
